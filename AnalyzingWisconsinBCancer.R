@@ -23,5 +23,5 @@ library(dplyr)
 bcancer <- bcancer %>% 
   mutate(Class = ifelse(Class == 4, 1,0))
 
-rpart(Class ~ )
+p <- rpart(Class ~ ., data = bcancer )
 View(bcancer)
